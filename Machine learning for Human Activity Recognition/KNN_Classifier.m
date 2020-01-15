@@ -4,8 +4,8 @@ function [Accuracy,PredictionLabels] = KNN_Classifier(DM,K,trainData,testData)
 % training and testing dataset in order to compute the accuracy and
 % prediction labels of the testing dataset.
 
-% Inputs: DM = Distance Metric(1=Manhattan,2=Euclidean,3=Cosine,
-%         K = Number of K nearest neighbours used for majority voting,
+% Inputs: DM = Distance Metric(1=Manhattan,2=Euclidean,3=Cosine)
+%         K = Number of K nearest neighbours used for majority voting
 %         trainData = Training dataset with each sample in a different 
 %         column (First row = Label vector) 
 %         testData = Testing dataset with each sample in a different column
