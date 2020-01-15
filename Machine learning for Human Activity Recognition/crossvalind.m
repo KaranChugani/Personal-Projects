@@ -291,4 +291,4 @@ if classesProvided
 end
 
 
-% Karan Chugani (Copyright MATLAB)
+%(Copyright MATLAB)
