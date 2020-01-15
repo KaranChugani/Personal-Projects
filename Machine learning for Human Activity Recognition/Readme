@@ -1,3 +1,5 @@
+#Project description
+
 This file will describe the steps taken to train and implement a machine learning pipeline for the classification of human activities using gyroscope and accelerometer data.To train the classifier a dataset which included 24000 observations of 5 different activities (Sitting, Standing, Walking, Jogging and Martial Arts) was used. This is provided in this folder in data.m file. (Note that features had already been extracted)
 
 PCA to explore the data:
