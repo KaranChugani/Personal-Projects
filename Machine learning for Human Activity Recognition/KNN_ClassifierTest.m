@@ -1,4 +1,4 @@
-function [Accuracy,PredictionLabels] = KNN_Classifier(DM,K,trainData,testData)
+function [Accuracy,PredictionLabels] = KNN_ClassifierTest(DM,K,trainData,testData)
 
 % This function takes takes in distance metric and K hyperparameters + the
 % training and testing dataset in order to compute the accuracy and
