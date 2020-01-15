@@ -38,7 +38,7 @@ trainData = TestChunk{CV}';
 
 %Range of K to test
 for K = 1:1
-[Accuracy(CV,K),PredictionLabels{CV,K}] = KNN_Classifier(DM,K,trainData,testData);
+[Accuracy(CV,K),PredictionLabels{CV,K}] = KNN_ClassifierTest(DM,K,trainData,testData);
 end
 
 end
