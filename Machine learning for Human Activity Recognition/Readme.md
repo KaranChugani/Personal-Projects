@@ -4,11 +4,11 @@ This file will describe the steps taken to train and implement a machine learnin
 
 ## Dataset:
 To train the classifier a dataset which included 24000 observations of 5 different activities. This is provided in this folder in data.mat file.(Note that features have already been extracted from the raw data) This file contains a matrix with dimensions of 24000*65. The first column is the label vector of dimensions 24000*1 and the remaining columns compose the feature matrix 24000*64. There were five different activities recorded. Class labels:
-Sitting = 1
-Standing = 2
-Walking = 3
-Jogging = 4
-Martial Arts = 5
+1. Sitting 
+2. Standing 
+3. Walking 
+4. Jogging 
+5. Martial Arts 
 
 ## PCA to explore the data:
 
