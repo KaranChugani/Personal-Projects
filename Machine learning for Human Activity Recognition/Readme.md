@@ -3,7 +3,7 @@
 This file will describe the steps taken to train and implement a machine learning pipeline for the classification of human activities using gyroscope and accelerometer data. The machine learning algorithm used was K-Nearest Neighbours. 
 
 ## Dataset:
-To train the classifier a dataset which included 24000 observations of 5 different activities. This is provided in this folder in data.mat file.(Note that features have already been extracted from the raw data) This file contains a matrix with dimensions of 24000*65. The first column is the label vector of dimensions 24000*1 and the remaining columns compose the feature matrix 24000*64. There were five different activities recorded. Class labels:
+To train the classifier a dataset which included 24000 observations of 5 different activities. This is provided in this folder in data.mat file.(Note that features have already been extracted from the raw data) This file contains a matrix with dimensions of 24000x65. The first column is the label vector of dimensions 24000x1 and the remaining columns compose the feature matrix 24000x64. There were five different activities recorded. Class labels:
 1. Sitting 
 2. Standing 
 3. Walking 
@@ -41,10 +41,8 @@ Considering the results obtained and the high amount of computational time requi
 
 ## References:
 
-[1]
-P. G. ,. T. P. Pavel Dohnálek, “Human activity recognition: classifier performance evaluation on multiple datasets,” JVE Journals, vol. 16, no. 3, pp. 1523-1534, 2014.
-[2]
-S. P. F. Nakajima, “Feature Selection and Activity Recognition from Wearable Sensors,” International Symposium on Ubiquitious Computing Systems, vol. 4239, no. -, pp. 516-527, 2006.
-[3]
-M.-W. H. S.-W. K. a. C.-F. T. Li-Yu Hu, “The distance function effect on k-nearest neighbor classification for medical datasets,” Springerplus, Kaohsiung, 2016.
-© 2020 GitHub, Inc.
+1. P. G. ,. T. P. Pavel Dohnálek, “Human activity recognition: classifier performance evaluation on multiple datasets,” JVE Journals,vol.16, no. 3, pp. 1523-1534, 2014.
+2. S. P. F. Nakajima, “Feature Selection and Activity Recognition from Wearable Sensors,” International Symposium on UbiquitiousComputing Systems, vol. 4239, no. -, pp. 516-527, 2006.
+3. M.-W. H. S.-W. K. a. C.-F. T. Li-Yu Hu, “The distance function effect on k-nearest neighbor classification for medical datasets,” Springerplus, Kaohsiung, 2016.© 
+
+2020 GitHub, Inc.
