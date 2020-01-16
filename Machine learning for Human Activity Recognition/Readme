@@ -1,4 +1,4 @@
-## Project description
+ *Project description*
 
 This file will describe the steps taken to train and implement a machine learning pipeline for the classification of human activities using gyroscope and accelerometer data. The machine learning algorithm used was K-Nearest Neighbours. 
 
