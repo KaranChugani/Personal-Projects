@@ -35,6 +35,8 @@ To ensure a fair test N-fold Cross validation was used. This is a technique that
 
 Testing was carried out in the KNN_HyperparameterTuning script. This test had the objective of comparing three different distance equations: Euclidean, Manhattan and Cosine similarity (Equations can be found in [3]); as well as finding the optimal value of K to find which combination would give the highest classification accuracy. The three distance metrics were compared against each other for values of k ranging from 1 to 10 using 5- fold cross validation. Results are shown in Hyperparameter_tuning_results.PNG, where the Manhattan distance metric slightly outperforms the other two methods. Regarding K, the most optimal value was 1, as the accuracy slowly decreased as the value of K increased.
 
+![alt text](https://github.com/KaranChugani/Personal-Projects/blob/master/Machine%20learning%20for%20Human%20Activity%20Recognition/Hyperparameter_tuning_results.PNG)
+
 ## Pipeline design: 
 
 Considering the results obtained and the high amount of computational time required to find optimal hyperparameters using cross-validation, it was decided to preselect the values of the hyperparameters. Hence, the only pre-processing that would be performed would be converting the training data PCA components and selecting features that would explain 99.99% of the variance. The most optimal hyperparameters were K = 1 and Distance Metric = Manhattan
