@@ -7,7 +7,7 @@ cross validation analysis on the training data
 import tensorflow as tf
 import numpy as np
 from sklearn.model_selection import KFold
-from CNNfunctions import create_model
+from CNN_functions import create_model
  
 
 
