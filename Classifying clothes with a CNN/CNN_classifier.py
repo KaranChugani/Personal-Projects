@@ -9,7 +9,7 @@ import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score, confusion_matrix
-from CNNfunctions import create_model
+from CNN_functions import create_model
 
 
 #%% IMPORTING DATA AND RESHAPING IT FOR INPUT IN CNN 
