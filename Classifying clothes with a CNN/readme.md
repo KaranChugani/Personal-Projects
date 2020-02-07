@@ -26,6 +26,12 @@ In order to get a sense of the data PCA (Principal Component Analysis), which is
 ![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/PCA.PNG)
 
 
+
+![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/Variance%20Explained.PNG
+)
+
+
+
 ## Convolutional Neural Network:
 
 To make the decision as to which classifier to choose a literature review was made, specifically on papers that compared various classification techniques in the context of human activity recognition. A 2014 paper by researchers in the Ostrava Technical University compared the performance of various classifiers on three different Human Activity Recognition (HAR) datasets. Some of these classifiers are: Quadratic Discriminant Analysis (QDA), Random Forests (RF) and k-Nearest Neighbour (k-NN) amongst others. Results showed that k-NN and RF had the best performance [1]. Another paper published by researchers in Oulu University (Finland) and Waseda University (Japan) compared the performance of k-NN algorithm against a multilayer perceptron for the classification of 17 different activities. Results showed that the k-NN algorithm slightly outperformed the multilayer perceptron (92.89% against 89.76%) [2] . Due to its simplicity in design compared to other classifiers and its high classification accuracy, it was decided to implement the k-NN algorithm.
