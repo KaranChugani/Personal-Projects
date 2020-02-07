@@ -21,7 +21,9 @@ More information on this dataset can be found in: [Fashion MNIST](https://github
 
 ## Using PCA to explore the dataset:
 
-In order to get a sense of the data PCA (Principal Component Analysis), which is a technique that can reduce the dimensionality of a dataset by applying orthogonal linear transformations was used. The 
+In order to get a sense of the data PCA (Principal Component Analysis), which is a technique that can reduce the dimensionality of a dataset by applying orthogonal linear transformations was used. 
+
+![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/PCA.PNG)
 
 
 ## Convolutional Neural Network:
