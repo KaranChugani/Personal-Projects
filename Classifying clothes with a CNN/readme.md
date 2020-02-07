@@ -18,17 +18,20 @@ The dataset used in this task is the Fashion-MNIST, consisting of 70000 images o
 
 More information on this dataset can be found in: [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist)
 
+From the plot it can be seen that 
 
 ## Using PCA to explore the dataset:
 
-In order to get a sense of the data PCA (Principal Component Analysis), which is a technique that can reduce the dimensionality of a dataset by applying orthogonal linear transformations was used. 
+In order to get a sense of the data PCA (Principal Component Analysis), which is a technique that can reduce the dimensionality of a dataset by applying orthogonal linear transformations, was used. In order to input the images into the PCA algorithm the 28*28 images where flattened out to form a vector of length 784, thus each observation having 784 features. First the proportion of variance explained by the principal components was calculated:
+
+![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/Variance%20Explained.PNG)
+
+As seen from the plot most of the variance is contained in the first components with the first 10 components containing around 73% of the variance and the first 2 principal components representing around 47% of the variance. Next, a scatter plot of the first two principal components was plot, with each clothes class being represented by a different colour.
+
 
 ![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/PCA.PNG)
 
-
-
-![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/Variance%20Explained.PNG
-)
+The figure shows that the first two components give some separability in the dataset, however several classes appear quite close to each other in the feature space, which can give insights as to what classes could be misclassified with each other. For example, the sandal and the sneaker class are clustered in the same area and the Shirt and T-shirt class are scattered closely to each other 
 
 
 
