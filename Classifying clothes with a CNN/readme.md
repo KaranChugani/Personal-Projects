@@ -3,7 +3,7 @@
 This document will describe the steps taken build a Convolutional Neural Network for an clothes recognition task.
 
 ## Dataset:
-The dataset used in this task is the Fashion-MNIST, consisting of 70000 images of different clothes items from the Zalando catalogue. Each image has 28*28 dimensions and is in greyscale. There are 10 types of clothes items in this dataset: 
+The dataset used in this task is the Fashion-MNIST, consisting of 70000 (60000 training and 10000 testing) images of different clothes items from the Zalando catalogue. Each image has 28*28 dimensions and is in greyscale. There are 10 types of clothes items in this dataset: 
 
 0.	T-shirt/top
 1.	Trouser
@@ -17,8 +17,6 @@ The dataset used in this task is the Fashion-MNIST, consisting of 70000 images o
 9.	Ankle boot
 
 More information on this dataset can be found in: [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist)
-
-From the plot it can be seen that 
 
 ## Using PCA to explore the dataset:
 
@@ -44,13 +42,12 @@ Both the pooling and the convolutional layers used the smallest possible windows
 
 ## Cross-validation and optimizer selection
 
-A selection test was performed in order to select the best optimizer function. The functions tested were: 
+A selection test was performed in order to select the best optimizer function using the training dataset. To reduce the effects of overfitting on this test 3 fold cross-validation was used. The functions tested were: 
 
 {1:'SGD', 2:'RMSprop', 3:'Adagrad', 4:'Adadelta', 5:'Adam', 6:'Adamax',7:'Nadam'}
 
 
-
 ## Results:
 
-
+The best optimizer function was found to be "Adam" aft
 
