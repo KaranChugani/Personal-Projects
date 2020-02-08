@@ -38,16 +38,25 @@ Convolutional neural networks (CNN) are a type of neural network that is commonl
 
 ![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/CNNLAYERS.PNG)
 
-Both the pooling and the convolutional layers used the smallest possible windows, as in this problem, with clothes items that are very similar in shape (eg: Sneaker and Sandal) small local features will be required to discriminate between such similar clothing items. 
+Both the pooling and the convolutional layers used the smallest possible window sizes, as in this problem many clothes items had are very similar shape (eg: Sneaker and Sandal) which meant that small local features would be required to discriminate between objects with such similar shapes. 
 
 ## Cross-validation and optimizer selection
 
-A selection test was performed in order to select the best optimizer function using the training dataset. To reduce the effects of overfitting on this test 3 fold cross-validation was used. The functions tested were: 
+A selection test was performed in order to select the best optimizer function using the training dataset. To reduce the effects of overfitting 3 fold cross-validation was used. The functions tested were (more details on how each function works [here](https://keras.io/optimizers/)): 
 
-{1:'SGD', 2:'RMSprop', 3:'Adagrad', 4:'Adadelta', 5:'Adam', 6:'Adamax',7:'Nadam'}
+1. SGD
+2. RMSprop
+3. Adagrad
+4. Adadelta
+5. Adam
+6. Adamax
+7. Nadam
+
 
 
 ## Results:
 
-The best optimizer function was found to be "Adam" aft
+Using the parameters described as showing the best performance the CNN was trained using the Fashion MNIST training set. The resulting model was then evaluated using the testing data, with results being shown in the confusion matrix below:
+
+
 
