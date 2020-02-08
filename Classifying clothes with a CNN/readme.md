@@ -57,5 +57,13 @@ After the best optimizer was found a second test was performed to calculate the 
 
 Using the optimal parameters the CNN was trained using the Fashion MNIST training set. The resulting model was then evaluated using the testing data, with results being shown in the confusion matrix below:
 
+![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/Confusion%20Matrix.PNG)
 
+As seen the model shows a high performance, with an accuracy of 91.6%. Most of the misclassification occurs between the T-shirt and Shirt classes, which was anticipated in the PCA scatter plot where the two classes were spread in the same area in the PC space. Other classes which were clustered in the same area such as the sandal and the sneaker, were differentiated with a excellent level of accuracy by the model with only 18 misclassifications (98.2% accuracy).
+
+## References:
+
+1. GitHub. (2020). zalandoresearch/fashion-mnist. [online] Available at: https://github.com/zalandoresearch/fashion-mnist [Accessed 8 Feb. 2020].
+
+2. Keras.io. (2020). Optimizers - Keras Documentation. [online] Available at: https://keras.io/optimizers/ [Accessed 8 Feb. 2020].
 
