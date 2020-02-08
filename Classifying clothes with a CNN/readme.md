@@ -29,18 +29,14 @@ As seen from the plot most of the variance is contained in the first components 
 
 ![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/PCA.PNG)
 
-The figure shows that the first two components give some separability in the dataset, however several classes appear quite close to each other in the feature space, which can give insights as to what classes could be misclassified with each other. For example, the sandal and the sneaker class are clustered in the same area and the Shirt and T-shirt class are scattered closely to each other 
+The figure shows that the first two components give some separability in the dataset, however several classes appear quite close to each other in the feature space, which can give insights as to what classes could be misclassified with each other. For example, the sandal and the sneaker class are clustered in the same area and the Shirt and T-shirt class are scattered closely to each other. The code used to create this plots can be found in Fashion_mnist_PCA_analysis.py.
 
 
 ## Convolutional Neural Network:
 
-Convolutional neural networks (CNN) are a type of neural network that is commonly used in image classification problems. CNN´s first layers are normally convolutional and pooling layers, which extract the most relevant information from the images and reduce their dimensionality. This information is then fed into more classical dense layers. In this task the following architechture was used:
+Convolutional neural networks (CNN) are a type of neural network that is commonly used in image classification problems. CNN´s first layers are normally convolutional and pooling layers, which extract the most relevant information from the images and reduce their dimensionality. In this CNN both the pooling and the convolutional layers used the smallest possible window sizes, as in this problem many clothes items had are very similar shape (eg: Sneaker and Sandal) which meant that small local features would be required to discriminate between objects with such similar shapes. Hyperparameter optimization was then used to find the best values for the number of filters in the convolutional layers and the best optimizer function
 
-![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/CNNLAYERS.PNG)
-
-Both the pooling and the convolutional layers used the smallest possible window sizes, as in this problem many clothes items had are very similar shape (eg: Sneaker and Sandal) which meant that small local features would be required to discriminate between objects with such similar shapes. 
-
-## Cross-validation and optimizer selection
+## Cross-validation and hyperparameter selection
 
 A selection test was performed in order to select the best optimizer function using the training dataset. To reduce the effects of overfitting 3 fold cross-validation was used. The functions tested were (more details on how each function works [here](https://keras.io/optimizers/)): 
 
@@ -52,11 +48,14 @@ A selection test was performed in order to select the best optimizer function us
 6. Adamax
 7. Nadam
 
+After the best optimizer was found a second test was performed to calculate the number of output filters in each convolution which gave the maximum classification accuracy. The filter numbers tested were: 8,16,32,48,64 and 80. The script, which is found in Hyperparameter_Tuning.py, showed that the "Adam" optimization method with a filter number of 80 gave the best performance. The architechture of the final model was: 
+
+![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/CNNLAYERS.PNG)
 
 
 ## Results:
 
-Using the parameters described as showing the best performance the CNN was trained using the Fashion MNIST training set. The resulting model was then evaluated using the testing data, with results being shown in the confusion matrix below:
+Using the optimal parameters the CNN was trained using the Fashion MNIST training set. The resulting model was then evaluated using the testing data, with results being shown in the confusion matrix below:
 
 
 
