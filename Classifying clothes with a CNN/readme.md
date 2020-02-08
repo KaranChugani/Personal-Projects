@@ -48,7 +48,7 @@ A selection test was performed in order to select the best optimizer function us
 6. Adamax
 7. Nadam
 
-After the best optimizer was found a second test was performed to calculate the number of output filters in each convolution which gave the maximum classification accuracy. The filter numbers tested were: 8,16,32,48,64 and 80. The script, which is found in Hyperparameter_Tuning.py, showed that the "Adam" optimization method with a filter number of 80 gave the best performance. The architechture of the final model was: 
+After the best optimizer was found a second test was performed to calculate the number of output filters in each convolution which gave the maximum classification accuracy. The filter numbers tested were: 8,16,32,48,64 and 80. The script, which is found in Hyperparameter_Tuning.py, showed that the "Adam" optimization method with a filter number of 80 gave the best performance. The architecture of the final model was: 
 
 ![](https://github.com/KaranChugani/Personal-Projects/blob/master/Classifying%20clothes%20with%20a%20CNN/Plots/CNNLAYERS.PNG)
 
