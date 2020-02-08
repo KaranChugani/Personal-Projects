@@ -6,4 +6,4 @@ In this project I used a K-Nearest Neighbour algorithm to classify different hum
 
 ## Classifying clothes with a CNN
 
-For this project I trained and tested a Convolutional Neural Network in order to classify images of 10 different clothes items belonging to the Fashion MNIST dataset
+For this project I trained and tested a Convolutional Neural Network in order to classify images of 10 different clothes items belonging to the Fashion MNIST dataset.
