@@ -14,7 +14,7 @@ In brief, the dataset consists of 9 subjects performing 4 types of movement imag
 2.	Feet
 3.	Tongue
 
-For each subject two different sessions were recorded in different days. In each session the subject performed 6 runs separated by short breaks. Each run consisted of 48 trials (12 for each movement type) adding up to 288 trials for each session. The first session performed by the subject was used for training/validation whilst the second was exclusively used for testing. More information on the dataset can be found here [2].
+For each subject two different sessions were recorded in different days. In each session the subject performed 6 runs separated by short breaks. Each run consisted of 48 trials (12 for each movement type) adding up to 288 trials for each session. The first session performed by the subject was used for training/validation whilst the second was exclusively used for testing. Full details on the dataset can be found here [2].
 
 ## Preprocessing
 
