@@ -36,7 +36,7 @@ The training strategy involved randomly splitting the training session into trai
 
 ## Results 
 
-
+(To be completed) 
 Best results were found using a Adam as the optimizer and a learning rate of 0.0625 * 10^-2 and a mini batch size of 64. 
 
 
