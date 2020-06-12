@@ -24,11 +24,11 @@ For each subject two different sessions were recorded in different days. In each
 
 ## Preprocessing
 
-Minimal preprocessing was applied to the dataset in order to test the capabilities of this system for end to end deep learning. The signal was digitally filtered using a 3rd order butterworth filter, with the best results being obtained when applying a lowpass filter at 38 Hz. After this electrode-wise exponentially weighted standardization (EWS), as described in section A7 of [1] was applied to standardize the continous data, with the decay factor having a value of 0.999 and the initial mean and the variance being obtained out of the first 1000 values of the signal. For each trial the signal was windowed from 0.5s before trial onset to 4s after trial onset. As the sampling frequency was 250 Hz each window had a total of 4.5s * 250 samples/s = 1125 samples.
+Minimal preprocessing was applied to the dataset in order to test the capabilities of this system for end to end deep learning. The signal was digitally filtered using a 3rd order butterworth filter, with the best results being obtained when applying a lowpass filter at 38 Hz. After this electrode-wise exponentially weighted standardization (EWS), as described in section A7 of [1] was applied to standardize the continous data, with the decay factor having a value of 0.999 and the initial mean and the variance being obtained out of the first 1000 values of the signal. For each trial the signal was windowed from 0.5s before trial onset to 4s after trial onset. As the sampling frequency was 250 Hz each window had a total of 4.5s * 250 samples/s = 1125 samples. Implementations of these functions can be seen in EEGPreprocessing.py.
 
 ## Shallow ConvNet
 
-The architechture of the network is based on the model described in figure 2 of [1]. The input to the network were the 22 EEG channels windowed in the region of interest, thus the input being of shape: Batch-size * 1125 * 22 * 1. The first block  consisted of two separated convolutional layers, the first performed convolutions through the temporal plane whilst the latter performed a convolution throught the spatial plane (electrodes). This was followed by a batch normalisation layer and a squaring non-linearity, which the authors of the paper suggest could better extract bandpower features in the signal. Following the squaring non-linearity were an average pooling layer, a log activation function and a final convolutional layer. The output layer consisted in a dense layer with 4 neurons which used a softmax activation. A summary of the model can be seen below:
+The architechture of the network is based on the model described in figure 2 of [1]. The input to the network were the 22 EEG channels windowed in the region of interest, thus the input being of shape: Batch-size * 1125 * 22 * 1. The first block  consisted of two separated convolutional layers, the first performed convolutions through the temporal plane whilst the latter performed a convolution throught the spatial plane (electrodes). This was followed by a batch normalisation layer and a squaring non-linearity, which the authors of the paper suggest could better extract bandpower features in the signal. Following the squaring non-linearity were an average pooling layer, a log activation function and a final convolutional layer. The output layer consisted in a dense layer with 4 neurons which used a softmax activation. A summary of the model can be seen in EEGModels.py.
 
 ## Model training 
 
@@ -36,7 +36,8 @@ The training strategy involved randomly splitting the training session into trai
 
 ## Results 
 
-Best results were found using a Adam as the optimizer and a learning rate of 0.0625 * 10^-2 and a mini batch size of 64.
+
+Best results were found using a Adam as the optimizer and a learning rate of 0.0625 * 10^-2 and a mini batch size of 64. 
 
 
 
