@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May 19 18:40:49 2020
-
-@author: Karan
-"""
-
-
 import tensorflow as tf
 from tensorflow.keras.layers import Input, Dense, BatchNormalization, Flatten, Conv2D, AveragePooling2D, Dropout
 from tensorflow.keras.models import Model

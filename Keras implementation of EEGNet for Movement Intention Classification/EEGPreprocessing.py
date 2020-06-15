@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue May 19 18:41:34 2020
-
-@author: Karan
-"""
-
-
 from scipy import signal
 import numpy as np
 from mat4py import loadmat

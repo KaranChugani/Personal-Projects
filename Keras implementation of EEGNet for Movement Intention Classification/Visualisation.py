@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jun 12 18:35:33 2020
-
-@author: Karan
-"""
-
-
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
