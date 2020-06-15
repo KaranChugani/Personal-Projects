@@ -7,6 +7,9 @@ This project implements the Shallow ConvNet described in [1] using the Keras API
 - https://www.scipy.org/
 - https://pypi.org/project/mat4py/
 - https://www.tensorflow.org/
+- https://matplotlib.org/
+- https://pandas.pydata.org/
+- https://seaborn.pydata.org/
 
 
 ## Dataset:
@@ -36,8 +39,9 @@ The training strategy involved randomly splitting the training session into trai
 
 ## Results 
 
-(To be completed) 
-Best results were found using a Adam as the optimizer and a learning rate of 0.0625 * 10^-2 and a mini batch size of 64. 
+Overall, results obtained using this system achieve a performance of around 68% on the BCI Dataset 2a evaluation set, similar to the results obtained using Filter-Bank Common Spatial Patterns [1], a common technique used for motor intention decoding. These results shows the potential of end to end deep for BCI applications. Additionaly, results are slightly lower than those obtained in [1] for the Shallow ConvNet, which I believe could be due to differences in the artifact removal strategy
+
+NOTE: The hyperparameters you can find in the code show the values that I found to work best and differ slightly from the values used in [1]. I highly encourage you perform your own hyperparameter search for you to obtain a better performance. 
 
 
 
