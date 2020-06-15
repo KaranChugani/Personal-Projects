@@ -15,6 +15,8 @@ from tensorflow.keras import callbacks
 
 
 
+# Shallow Convnet Model:
+
 def EEGModel(input_shape,DrRate,N_channels,N_temp_filters,N_spatial_filters,temp_filter_len,av_pool_size,av_pool_stride,final_conv_filters):
     
     
@@ -60,6 +62,10 @@ def EEGModel(input_shape,DrRate,N_channels,N_temp_filters,N_spatial_filters,temp
     
     return model
 
+
+
+# Callback 1: Stop training when validation accuracy doesnt increase for X amount 
+# of epochs
 
 def Callback_Iteration1(patience):
     Val_acc_stop = callbacks.EarlyStopping(monitor='val_accuracy', patience=patience, mode='max',
