@@ -20,7 +20,7 @@ from tensorflow.keras import callbacks
 def EEGModel(input_shape,DrRate,N_channels,N_temp_filters,N_spatial_filters,temp_filter_len,av_pool_size,av_pool_stride,final_conv_filters):
     
     
-    # Define the input placeholder as a tensor with shape input_shape. Think of this as your input image!
+    # INPUT LAYER
     X_input = Input(input_shape)
 
     # TEMPORAL CONV
@@ -29,7 +29,7 @@ def EEGModel(input_shape,DrRate,N_channels,N_temp_filters,N_spatial_filters,temp
     # SPATIAL CONV
     X = Conv2D(N_spatial_filters,  (1,N_channels), padding = 'valid',name = 'Spatial_convolution',use_bias= False)(X)
    
-    # BATCH NORM (If axis is not defined a spatial batch normalisation is done, normalizing each channel and not normalizing each batch)
+    # BATCH NORM 
     X = BatchNormalization(momentum = 0.1)(X)
     
     # SQUARING
