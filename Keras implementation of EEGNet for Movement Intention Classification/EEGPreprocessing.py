@@ -108,9 +108,12 @@ def EWS(Data,decay_factor,eps):
     # Labelarray = Output movement for each trial 
 
 
-def Data_extraction(path,lf,hf,fs,Win_Start,Win_End,decay_factor,eps):
+def Data_extraction(path,lf,hf,fs,Win_Start_s,Win_End_s,decay_factor,eps):
     
-
+    # Window start and end in samples
+    Win_Start = int(Win_Start_s*fs)
+    Win_End =   int(Win_End_s*fs)
+    
    # Loading data 
     WindowData = []
     MatFile = loadmat(path)
@@ -148,7 +151,12 @@ def Data_extraction(path,lf,hf,fs,Win_Start,Win_End,decay_factor,eps):
             WindowData.append(DataArray[t+Win_Start:t+Win_End,0:22])
             Labelarray.append(int(np.array(label[j])))
                 
-    # Converting label array to numpy
+    # Converting label array to numpy and setting up labels for NN input
     Labelarray = np.array(Labelarray)
+    Labelarray = Labelarray - 1
+    
+    # Converting data for NN input
+    WindowData = np.array(WindowData)
+    
             
     return WindowData,Labelarray
