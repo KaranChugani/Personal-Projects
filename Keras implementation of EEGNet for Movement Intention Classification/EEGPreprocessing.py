@@ -145,9 +145,7 @@ def Data_extraction(path,lf,hf,fs,Win_Start_s,Win_End_s,decay_factor,eps):
         # Creating windows and label arrays for each individual trial 
         for j in range(len(label)):
             
-            t = int(np.array(label_time[j]))
-            #if int(np.array(artifacts[j])) == 0:
-            #if np.max(np.abs(RawData[t+Win_Start:t+Win_End,0:25])) < 800:      
+            t = int(np.array(label_time[j])) 
             WindowData.append(DataArray[t+Win_Start:t+Win_End,0:22])
             Labelarray.append(int(np.array(label[j])))
                 
