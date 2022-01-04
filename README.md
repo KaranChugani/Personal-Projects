@@ -22,4 +22,7 @@ In this project I used a K-Nearest Neighbour algorithm to classify different hum
 
 
 
+
+
+
 [1] Schirrmeister, Robin & Springenberg, Jost & Fiederer, Lukas & Glasstetter, Martin & Eggensperger, Katharina & Tangermann, Michael & Hutter, Frank & Burgard, Wolfram & Ball, Tonio. (2017). Deep learning with convolutional neural networks for EEG decoding and visualization: Convolutional Neural Networks in EEG Analysis. Human Brain Mapping. 38. 10.1002/hbm.23730. 
