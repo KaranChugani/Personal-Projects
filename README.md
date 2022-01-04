@@ -1,16 +1,20 @@
 # Personal-Projects
 
-## Machine learning for Human Activity recognition
+## Keras implementation of EEGNET for Movement intention classification
 
-In this project I used a K-Nearest Neighbour algorithm to classify different human activities using accelerometer and gyroscope data.
+Built the EEGNet model described in [1] using Keras with the aim of creating an end to end neural network that could discriminate motor intention from EEG signals. 
 
 ## Classifying clothes with a CNN
 
 For this project I trained and tested a Convolutional Neural Network in order to classify images of 10 different clothes items belonging to the Fashion MNIST dataset.
 
-## Keras implementation of EEGNET for Movement intention classification
 
-Built the EEGNet model described in [1] using Keras with the aim of creating an end to end neural network that could discriminate motor intention from EEG signals. 
+## Machine learning for Human Activity recognition
+
+In this project I used a K-Nearest Neighbour algorithm to classify different human activities using accelerometer and gyroscope data.
+
+
+
 
 
 
