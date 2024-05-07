@@ -2,7 +2,7 @@
 
 ## Tensorflow-Keras implementation of EEGNET for Movement intention classification
 
-Built the EEGNet model described in [1] using Keras with the aim of creating an end to end neural network that could discriminate motor intention from EEG signals. 
+Built the EEGNet model described in [1] using Keras with the aim of creating an end to end neural network that could discriminate motor intention from EEG time series signals. 
 
 
 
